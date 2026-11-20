@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Spoken English Demo Class in Amravati | Oxford Spoken English Classes</title>
+<meta name="description" content="You understand English. Now speak it. Live spoken English classes in Amravati, explained in Marathi and Hindi. Book a free 30-minute demo class.">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#0F1B2D">
+<style>
+:root{
+  --navy:#0F1B2D;--navy2:#16273f;--gold:#E9B44C;--gold2:#f3c978;--cream:#F7F4EC;--ink:#1b2230;
+  --mute:#5a6574;--line:#e3dccb;--green:#17a34a;--coral:#E8604C;--r:14px
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.55;font-size:17px}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+h1,h2,h3{line-height:1.12;letter-spacing:-.02em;color:var(--navy)}
+h2{font-size:clamp(26px,5vw,38px);margin-bottom:12px}
+.eyebrow{display:inline-block;font-size:12.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#8a6a1c;margin-bottom:10px}
+.lead{font-size:18px;color:var(--mute);max-width:640px}
+section{padding:56px 0}
+.alt{background:var(--cream)}
+
+/* top bar */
+.top{position:sticky;top:0;z-index:50;background:var(--navy);color:var(--cream)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;height:60px}
+.brand{font-weight:800;font-size:15px;letter-spacing:.04em;line-height:1.15}
+.brand small{display:block;font-weight:500;font-size:11px;letter-spacing:.1em;opacity:.7}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--gold);color:var(--navy);font-weight:800;font-size:17px;padding:15px 22px;border:0;border-radius:12px;cursor:pointer;text-decoration:none;font-family:inherit;transition:transform .08s,background .15s}
+.btn:hover{background:var(--gold2)}.btn:active{transform:translateY(1px)}
+.btn.sm{font-size:14px;padding:10px 14px;border-radius:10px}
+.btn.green{background:var(--green);color:#fff}.btn.green:hover{background:#15913f}
+.btn.block{width:100%}
+
+/* hero */
+.hero{background:var(--navy);color:var(--cream);padding:34px 0 46px;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border-radius:50%;background:var(--navy2)}
+.hero .wrap{position:relative;display:grid;gap:30px}
+.tag{display:inline-block;background:var(--gold);color:var(--navy);font-weight:800;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;padding:6px 12px;border-radius:99px;margin-bottom:16px}
+.hero h1{color:#fff;font-size:clamp(38px,9vw,66px);font-weight:900;margin-bottom:14px}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero p.sub{font-size:19px;opacity:.9;max-width:520px;margin-bottom:18px}
+.ticks{list-style:none;display:grid;gap:8px;margin-bottom:6px}
+.ticks li{display:flex;gap:10px;align-items:flex-start;font-weight:600}
+.ticks svg{flex:none;margin-top:3px;color:var(--gold)}
+
+/* form card */
+.card{background:#fff;color:var(--ink);border-radius:18px;padding:22px;box-shadow:0 18px 50px rgba(0,0,0,.28)}
+.card h3{font-size:22px;margin-bottom:4px}
+.card .free{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:13.5px;color:var(--mute);margin-bottom:6px}
+.card .free b{color:var(--green)}
+label.f{display:block;font-weight:700;font-size:14.5px;margin:13px 0 5px}
+input[type=text],input[type=tel],select{width:100%;font-size:17px;padding:13px 14px;border:1.5px solid #cfc7b4;border-radius:10px;font-family:inherit;background:#fff;color:var(--ink)}
+input:focus,select:focus{outline:3px solid rgba(233,180,76,.55);border-color:var(--gold)}
+.slots{display:grid;gap:8px}
+.slot{display:flex;gap:10px;align-items:center;border:1.5px solid #cfc7b4;border-radius:10px;padding:11px 12px;cursor:pointer;font-weight:600}
+.slot input{width:19px;height:19px;accent-color:var(--navy)}
+.slot small{display:block;font-weight:500;color:var(--mute)}
+.slot:has(input:checked){border-color:var(--navy);background:#fbf6e8}
+.err{display:none;color:#b3261e;font-size:14px;margin-top:8px}
+.micro{font-size:12.5px;color:var(--mute);text-align:center;margin-top:9px}
+.seats{display:flex;align-items:center;gap:8px;font-size:13.5px;font-weight:700;color:#8a3a2a;background:#fdeee9;border-radius:8px;padding:8px 10px;margin-top:12px}
+.done{display:none;text-align:center;padding:10px 0}
+.done h3{margin-bottom:8px}
+
+/* trust strip */
+.strip{background:var(--cream);border-bottom:1px solid var(--line)}
+.strip .wrap{display:grid;grid-template-columns:repeat(2,1fr);gap:0}
+.strip .it{padding:18px 8px;text-align:center;border-right:1px solid var(--line)}
+.strip .it:nth-child(2n){border-right:0}
+.strip .it:nth-child(-n+2){border-bottom:1px solid var(--line)}
+.strip b{display:block;font-size:24px;color:var(--navy);line-height:1.1}
+.strip span{font-size:13.5px;color:var(--mute)}
+
+/* pain */
+.grid{display:grid;gap:14px;margin-top:22px}
+.pain{background:#fff;border:1px solid var(--line);border-left:5px solid var(--coral);border-radius:var(--r);padding:16px 18px;font-weight:600;font-size:17px}
+.turn{margin-top:24px;font-size:20px;font-weight:700;color:var(--navy);max-width:720px}
+.turn span{color:#b5821b}
+
+/* steps */
+.steps{display:grid;gap:14px;margin-top:22px;counter-reset:s}
+.step{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:20px 20px 20px 74px;position:relative}
+.step:before{counter-increment:s;content:counter(s);position:absolute;left:18px;top:18px;width:42px;height:42px;border-radius:50%;background:var(--navy);color:var(--gold);font-weight:900;font-size:19px;display:flex;align-items:center;justify-content:center}
+.step b{display:block;font-size:18px;color:var(--navy);margin-bottom:2px}
+.step span{color:var(--mute);font-size:16px}
+
+/* programs */
+.prog{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:22px;display:flex;flex-direction:column;gap:6px}
+.prog .m{font-size:12.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#8a6a1c}
+.prog h3{font-size:23px}
+.prog .d{font-size:34px;font-weight:900;color:var(--navy);line-height:1}
+.prog .d small{font-size:16px;font-weight:600;color:var(--mute)}
+.prog p{color:var(--mute);font-size:16px}
+.prog.hi{border:2px solid var(--navy);box-shadow:0 8px 24px rgba(15,27,45,.12)}
+.note{margin-top:16px;font-size:15px;color:var(--mute)}
+
+/* who */
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.chip{background:var(--navy);color:var(--cream);padding:10px 16px;border-radius:99px;font-weight:700;font-size:15.5px}
+
+/* mistakes */
+.mist{display:grid;gap:12px;margin-top:22px}
+.row{display:grid;grid-template-columns:1fr;gap:6px;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:14px 16px}
+.row .bad{color:#b3261e;font-weight:700;text-decoration:line-through;text-decoration-thickness:2px}
+.row .good{color:#13803a;font-weight:800}
+.row .bad:before{content:"✗  ";text-decoration:none;display:inline-block}
+.row .good:before{content:"✓  "}
+.mist-cta{margin-top:20px;font-weight:700;color:var(--navy);font-size:18px}
+
+/* proof */
+.vid{background:var(--navy);border-radius:16px;aspect-ratio:9/16;max-width:340px;margin:22px auto 0;overflow:hidden;display:none}
+.vid video,.vid iframe{width:100%;height:100%;border:0;object-fit:cover}
+.vid.show{display:block}
+
+/* faq */
+details{border-bottom:1px solid var(--line);padding:16px 0}
+summary{font-weight:700;font-size:18px;cursor:pointer;color:var(--navy);list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";font-size:24px;line-height:1;color:#b5821b}
+details[open] summary:after{content:"–"}
+details p{margin-top:10px;color:var(--mute)}
+
+/* final cta */
+.final{background:var(--navy);color:var(--cream);text-align:center}
+.final h2{color:#fff}
+.final p{opacity:.85;margin:0 auto 22px;max-width:560px}
+.final .btns{display:grid;gap:12px;max-width:420px;margin:0 auto}
+
+footer{background:#0a1320;color:#aab4c3;padding:26px 0 90px;font-size:14px}
+footer b{color:var(--cream)}
+
+/* sticky mobile cta */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:60;background:#fff;border-top:1px solid var(--line);padding:10px 14px;display:none;box-shadow:0 -6px 20px rgba(0,0,0,.08)}
+
+@media(max-width:899px){.sticky{display:block}}
+@media(min-width:700px){
+  .grid.g2{grid-template-columns:1fr 1fr}
+  .grid.g3{grid-template-columns:repeat(3,1fr)}
+  .steps.s3{grid-template-columns:repeat(3,1fr)}
+  .step{padding:70px 20px 20px 20px}
+  .step:before{left:20px;top:18px}
+  .strip .wrap{grid-template-columns:repeat(4,1fr)}
+  .strip .it{border-bottom:0!important;border-right:1px solid var(--line)!important}
+  .strip .it:last-child{border-right:0!important}
+  .row{grid-template-columns:1fr 1fr;gap:20px}
+}
+@media(min-width:900px){
+  .hero .wrap{grid-template-columns:1.15fr .85fr;align-items:center;gap:44px}
+  footer{padding-bottom:30px}
+}
+</style>
+</head>
+<body>
+
+<!-- =====================  CONFIG: edit these, nothing else needed  ===================== -->
+<script>
+window.OXFORD = {
+  whatsapp: "91XXXXXXXXXX",                  // Oxford WhatsApp Business number: country code + number, digits only
+  slots: ["Wednesday, 7:00 PM", "Saturday, 6:00 PM"], // two fixed group demo slots (edit to the real ones)
+  demoMode: "Live group class",              // shown under each slot, e.g. "Zoom" or "At the Radha Nagar class"
+  seatsLeft: 0,                              // set a real number (e.g. 12) to show "Only N seats left"; 0 hides it
+  showGoogleRating: false,                   // set true only after 4.9 stars / 691 reviews is verified on Google
+  googleRating: "4.9",
+  googleReviews: "691",
+  videoSrc: "",                              // path or URL of the student testimonial video (mp4); empty hides the block
+  pixelId: ""                                // Meta Pixel ID; empty disables tracking
+};
+</script>
+<!-- ======================================================================================== -->
+
+<header class="top"><div class="wrap">
+  <div class="brand">OXFORD SPOKEN ENGLISH CLASSES<small>RADHA NAGAR, AMRAVATI</small></div>
+  <a class="btn sm" href="#book" data-cta="top">Book free demo</a>
+</div></header>
+
+<main>
+
+<!-- HERO -->
+<div class="hero"><div class="wrap">
+  <div>
+    <span class="tag">Spoken English Classes · Amravati</span>
+    <h1>You understand English. <em>Now speak it.</em></h1>
+    <p class="sub">Live spoken English classes explained in Marathi and Hindi. Start speaking from day one, with a teacher who has taught for 13 years.</p>
+    <ul class="ticks">
+      <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg>Daily speaking practice, not just grammar</li>
+      <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg>Interview and group discussion practice</li>
+      <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg>Online and offline batches</li>
+    </ul>
+  </div>
+
+  <div class="card" id="book">
+    <div id="formBox">
+      <h3>Book your free demo seat</h3>
+      <div class="free"><span><b>Free</b></span><span>30 minutes</span><span>No payment</span></div>
+      <form id="f" novalidate>
+        <label class="f" for="n">Your name</label>
+        <input id="n" type="text" autocomplete="name" placeholder="e.g. Rahul Patil">
+        <label class="f" for="p">Mobile number</label>
+        <input id="p" type="tel" inputmode="numeric" maxlength="10" autocomplete="tel" placeholder="10-digit number">
+        <label class="f" for="g">What do you want English for?</label>
+        <select id="g">
+          <option value="">Select one</option>
+          <option>Job or interview</option>
+          <option>Work or business</option>
+          <option>College or exams</option>
+          <option>Speaking with confidence</option>
+        </select>
+        <label class="f">Pick your free demo slot</label>
+        <div class="slots" id="slots"></div>
+        <div class="err" id="err">Please fill in your name, a 10-digit mobile number, your goal and a slot.</div>
+        <button class="btn green block" type="submit" style="margin-top:16px" data-cta="form">Confirm my seat on WhatsApp</button>
+        <div class="seats" id="seats" style="display:none"></div>
+        <div class="micro">Tap the button, WhatsApp opens, press Send. Your seat is confirmed there.</div>
+      </form>
+    </div>
+    <div class="done" id="done">
+      <h3>Almost done</h3>
+      <p style="margin-bottom:14px">If WhatsApp did not open, tap below and press <b>Send</b> to confirm your seat.</p>
+      <a class="btn green block" id="waLink" href="#">Open WhatsApp</a>
+    </div>
+  </div>
+</div></div>
+
+<!-- TRUST STRIP -->
+<div class="strip"><div class="wrap">
+  <div class="it"><b>13 years</b><span>of teaching</span></div>
+  <div class="it" id="gTrust" style="display:none"><b id="gRate">4.9 ★</b><span id="gRev">Google rating</span></div>
+  <div class="it"><b>Marathi + Hindi</b><span>explained simply</span></div>
+  <div class="it"><b>Online + Offline</b><span>batches</span></div>
+  <div class="it"><b>Free demo</b><span>before you decide</span></div>
+</div></div>
+
+<!-- PAIN -->
+<section><div class="wrap">
+  <span class="eyebrow">Sound familiar?</span>
+  <h2>Understanding English is not the problem.</h2>
+  <div class="grid g2">
+    <div class="pain">You read and understand English, but words get stuck when you try to speak.</div>
+    <div class="pain">You freeze in interviews or group discussions.</div>
+    <div class="pain">You hesitate to speak English at office, college or at home.</div>
+    <div class="pain">You fear people will laugh if you make a mistake.</div>
+  </div>
+  <p class="turn">The real problem is fear of mistakes, and not enough speaking practice. <span>That is exactly what our classes fix.</span></p>
+</div></section>
+
+<!-- HOW THE DEMO WORKS -->
+<section class="alt"><div class="wrap">
+  <span class="eyebrow">Your free demo class</span>
+  <h2>What happens in the 30 minutes</h2>
+  <div class="steps s3">
+    <div class="step"><b>Check your speaking level</b><span>A short speaking round. No pressure, no marks.</span></div>
+    <div class="step"><b>Experience a live class</b><span>See how we teach and speak a few sentences yourself.</span></div>
+    <div class="step"><b>Get the right batch</b><span>We suggest the program that fits you. Join only if you like it.</span></div>
+  </div>
+  <div style="margin-top:26px"><a class="btn" href="#book" data-cta="steps">Book my free demo</a></div>
+</div></section>
+
+<!-- PROGRAMS -->
+<section><div class="wrap">
+  <span class="eyebrow">Programs</span>
+  <h2>Choose how you want to learn</h2>
+  <div class="grid g3">
+    <div class="prog hi">
+      <span class="m">Online</span>
+      <h3>Online Program</h3>
+      <div class="d">3 <small>months</small></div>
+      <p>Live online classes with speaking practice. Learn from home, anywhere in Maharashtra.</p>
+    </div>
+    <div class="prog">
+      <span class="m">Offline</span>
+      <h3>Offline Program</h3>
+      <div class="d">2 <small>months</small></div>
+      <p>In-person classes at Radha Nagar, Amravati, with face-to-face speaking practice.</p>
+    </div>
+    <div class="prog">
+      <span class="m">Skills</span>
+      <h3>Communication Skills</h3>
+      <div class="d">2 <small>months</small></div>
+      <p>Communication skills and personality development for work, interviews and daily life.</p>
+    </div>
+  </div>
+  <p class="note">Fee and the next batch dates are shared in your free demo class.</p>
+</div></section>
+
+<!-- WHO -->
+<section class="alt"><div class="wrap">
+  <span class="eyebrow">Who joins</span>
+  <h2>Made for people like you</h2>
+  <div class="chips">
+    <span class="chip">Job seekers</span><span class="chip">Final-year students</span><span class="chip">Working professionals</span><span class="chip">Homemakers</span><span class="chip">Business owners</span>
+  </div>
+  <p class="lead" style="margin-top:18px">Start from your level. Classes are explained in Marathi and Hindi, so you never feel lost.</p>
+</div></section>
+
+<!-- MISTAKES -->
+<section><div class="wrap">
+  <span class="eyebrow">Try it now</span>
+  <h2>3 English mistakes people make every day</h2>
+  <div class="mist">
+    <div class="row"><span class="bad">Myself Rahul.</span><span class="good">I am Rahul.</span></div>
+    <div class="row"><span class="bad">I am having a doubt.</span><span class="good">I have a doubt.</span></div>
+    <div class="row"><span class="bad">Open the light.</span><span class="good">Turn on the light.</span></div>
+  </div>
+  <p class="mist-cta">We fix these in class, by speaking them, not by memorising rules.</p>
+  <div style="margin-top:18px"><a class="btn" href="#book" data-cta="mistakes">Join the free demo</a></div>
+</div></section>
+
+<!-- PROOF -->
+<section class="alt"><div class="wrap" style="text-align:center">
+  <span class="eyebrow">Student voice</span>
+  <h2>Hear it from our students</h2>
+  <div class="vid" id="vid"></div>
+</div></section>
+
+<!-- FAQ -->
+<section><div class="wrap" style="max-width:760px">
+  <span class="eyebrow">Questions</span>
+  <h2>Before you book</h2>
+  <details><summary>I understand almost no English. Is this for me?</summary><p>Yes. Classes are explained in Marathi and Hindi, and we start from your level.</p></details>
+  <details><summary>Is the demo class really free?</summary><p>Yes. There is no payment for the demo class.</p></details>
+  <details><summary>Do I have to join after the demo?</summary><p>No. Join only if you like the class.</p></details>
+  <details><summary>Can I join online?</summary><p>Yes. There is a 3-month online program, and an offline program at Radha Nagar, Amravati.</p></details>
+  <details><summary>Do you guarantee a job or a result?</summary><p>No one can honestly guarantee that. We give you daily speaking practice and clear guidance. Your progress depends on your practice.</p></details>
+  <details><summary>What happens after I send the WhatsApp message?</summary><p>Your demo seat is confirmed on WhatsApp, and you get a reminder before the class.</p></details>
+</div></section>
+
+<!-- FINAL CTA -->
+<section class="final"><div class="wrap">
+  <h2>Stop translating in your head. Start speaking.</h2>
+  <p>Book a free 30-minute demo class. No payment, no pressure.</p>
+  <div class="btns">
+    <a class="btn" href="#book" data-cta="final">Book my free demo seat</a>
+    <a class="btn green" id="waDirect" href="#" data-cta="wa-direct">Chat on WhatsApp</a>
+  </div>
+</div></section>
+
+</main>
+
+<footer><div class="wrap">
+  <b>Oxford Spoken English Classes</b><br>Radha Nagar, Amravati, Maharashtra<br>
+  <span style="opacity:.7">&copy; Oxford Spoken English Classes. Individual results vary with practice.</span>
+</div></footer>
+
+<div class="sticky"><a class="btn block" href="#book" data-cta="sticky">Book my free demo seat</a></div>
+
+<script>
+(function(){
+  var C = window.OXFORD, $ = function(i){return document.getElementById(i)};
+  var configured = /^91\d{10}$/.test(C.whatsapp);
+  if(!configured && window.console){console.warn("OXFORD config: set a real WhatsApp number before going live.");}
+
+  // slots
+  C.slots.forEach(function(s,i){
+    var l=document.createElement("label");l.className="slot";
+    l.innerHTML='<input type="radio" name="slot" value="'+s+'"'+(i===0?" checked":"")+'><span>'+s+'<small>'+C.demoMode+'</small></span>';
+    $("slots").appendChild(l);
+  });
+  if(C.seatsLeft>0){var se=$("seats");se.style.display="flex";se.textContent="Only "+C.seatsLeft+" seats left in the next demo";}
+  if(C.showGoogleRating){$("gTrust").style.display="";$("gRate").textContent=C.googleRating+" ★";$("gRev").textContent="Google rating · "+C.googleReviews+" reviews";}
+  if(C.videoSrc){var v=$("vid");v.classList.add("show");v.innerHTML='<video src="'+C.videoSrc+'" controls playsinline preload="metadata"></video>';}
+
+  // pixel
+  if(C.pixelId){!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init',C.pixelId);fbq('track','PageView');}
+
+  // source tracking from the ad URL
+  var q=new URLSearchParams(location.search), src=q.get("utm_campaign")||q.get("utm_source")||"";
+  function wa(msg){return "https://wa.me/"+C.whatsapp+"?text="+encodeURIComponent(msg);}
+  $("waDirect").href = wa("Hello, I saw your ad. I want to know about the free spoken English demo class."+(src?"\nSource: "+src:""));
+  document.querySelectorAll("[data-cta]").forEach(function(a){a.addEventListener("click",function(){if(window.fbq)fbq("trackCustom","CTAClick",{place:a.getAttribute("data-cta")});});});
+
+  // form
+  $("f").addEventListener("submit",function(e){
+    e.preventDefault();
+    var n=$("n").value.trim(), p=$("p").value.replace(/\D/g,""), g=$("g").value,
+        sl=(document.querySelector("input[name=slot]:checked")||{}).value;
+    if(n.length<2||p.length!==10||!g||!sl){$("err").style.display="block";return;}
+    $("err").style.display="none";
+    if(window.fbq)fbq("track","Lead");
+    var msg="Hello, I am "+n+". I want to book a seat for the free spoken English demo class on "+sl+".\nGoal: "+g+"\nMobile: "+p+(src?"\nSource: "+src:"");
+    var url=wa(msg);
+    $("formBox").style.display="none";$("done").style.display="block";$("waLink").href=url;
+    window.location.href=url;
+  });
+})();
+</script>
+</body>
+</html>
