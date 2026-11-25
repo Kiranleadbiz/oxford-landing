@@ -56,7 +56,7 @@ section{padding:56px 0}
 label.f{display:block;font-weight:700;font-size:14.5px;margin:13px 0 5px}
 input[type=text],input[type=tel],select{width:100%;font-size:17px;padding:13px 14px;border:1.5px solid #cfc7b4;border-radius:10px;font-family:inherit;background:#fff;color:var(--ink)}
 input:focus,select:focus{outline:3px solid rgba(233,180,76,.55);border-color:var(--gold)}
-.slots{display:grid;gap:8px}
+.slots{display:grid;gap:8px}#modes{grid-template-columns:1fr 1fr;margin-bottom:6px}
 .slot{display:flex;gap:10px;align-items:center;border:1.5px solid #cfc7b4;border-radius:10px;padding:11px 12px;cursor:pointer;font-weight:600}
 .slot input{width:19px;height:19px;accent-color:var(--navy)}
 .slot small{display:block;font-weight:500;color:var(--mute)}
@@ -163,7 +163,7 @@ footer b{color:var(--cream)}
 window.OXFORD = {
   whatsapp: "918886462233",                  // Oxford WhatsApp Business number: country code + number, digits only
   slots: ["Wednesday, 7:00 PM", "Saturday, 6:00 PM"], // two fixed group demo slots (edit to the real ones)
-  demoMode: "Live group class",              // shown under each slot, e.g. "Zoom" or "At the Radha Nagar class"
+  demoMode: "Live group demo",              // shown under each slot, e.g. "Zoom" or "At the Radha Nagar class"
   seatsLeft: 0,                              // set a real number (e.g. 12) to show "Only N seats left"; 0 hides it
   showGoogleRating: false,                   // set true only after 4.9 stars / 691 reviews is verified on Google
   googleRating: "4.9",
@@ -211,6 +211,11 @@ window.OXFORD = {
           <option>College or exams</option>
           <option>Speaking with confidence</option>
         </select>
+        <label class="f">How do you want to attend?</label>
+        <div class="slots" id="modes">
+          <label class="slot"><input type="radio" name="mode" value="Online" checked><span>Online<small>Join from home</small></span></label>
+          <label class="slot"><input type="radio" name="mode" value="Offline"><span>Offline<small>At Radha Nagar, Amravati</small></span></label>
+        </div>
         <label class="f">Pick your free demo slot</label>
         <div class="slots" id="slots"></div>
         <div class="err" id="err">Please fill in your name, a 10-digit mobile number, your goal and a slot.</div>
@@ -378,11 +383,12 @@ window.OXFORD = {
   $("f").addEventListener("submit",function(e){
     e.preventDefault();
     var n=$("n").value.trim(), p=$("p").value.replace(/\D/g,""), g=$("g").value,
-        sl=(document.querySelector("input[name=slot]:checked")||{}).value;
+        sl=(document.querySelector("input[name=slot]:checked")||{}).value,
+        md=(document.querySelector("input[name=mode]:checked")||{}).value||"Online";
     if(n.length<2||p.length!==10||!g||!sl){$("err").style.display="block";return;}
     $("err").style.display="none";
     if(window.fbq)fbq("track","Lead");
-    var msg="Hello, I am "+n+". I want to book a seat for the free spoken English demo class on "+sl+".\nGoal: "+g+"\nMobile: "+p+(src?"\nSource: "+src:"");
+    var msg="Hello, I am "+n+". I want to book a seat for the free spoken English demo class on "+sl+".\nMode: "+md+"\nGoal: "+g+"\nMobile: "+p+(src?"\nSource: "+src:"");
     var url=wa(msg);
     $("formBox").style.display="none";$("done").style.display="block";$("waLink").href=url;
     window.location.href=url;
